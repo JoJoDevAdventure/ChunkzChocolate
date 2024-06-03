@@ -66,16 +66,17 @@
 				</div>
 			</div>
 
-			<form class="flex-w flex-c-m contact100-form validate-form p-t-70">
+			<form name="submit-to-google-sheet" class="flex-w flex-c-m contact100-form validate-form p-t-70">
 				<div class="wrap-input100 validate-input where1" data-validate = "Email is required: ex@abc.xyz">
-					<input class="s1-txt1 placeholder0 input100" type="text" name="email" placeholder="Email Address">
+					<input class="s1-txt1 placeholder0 input100" type="email" name="email" id="email" placeholder="Email Address">
 					<span class="focus-input100"></span>
 				</div>
 
-				<button class="flex-c-m s1-txt1 size2 how-btn trans-04 where1">
+				<button type="submit" class="flex-c-m s1-txt1 size2 how-btn trans-04 where1">
 					Notify Me
 				</button>
-			</form>			
+				<span style="color: white;" id="msg"></span>
+			</form>
 		</div>
 	</div>
 
@@ -119,6 +120,25 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+	<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGdWjBSbkiFmDLX8RaRNbKF4QACjgoAYmU9hKYFvDDdnBCdMm3b0P-QHY-NFqvssr0dw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
 </html>
