@@ -333,10 +333,10 @@ input.input100 {
   top: 0;
   left: 0;
   background: #10c4fe;
-  background: -webkit-linear-gradient(bottom, #10c4fe, #cf0eae);
-  background: -o-linear-gradient(bottom, #10c4fe, #cf0eae);
-  background: -moz-linear-gradient(bottom, #10c4fe, #cf0eae);
-  background: linear-gradient(bottom, #10c4fe , #cf0eae);
+  background: -webkit-linear-gradient(bottom, #0651d9, #042c78);
+  background: -o-linear-gradient(bottom, #0651d9, #042c78);
+  background: -moz-linear-gradient(bottom, #0651d9, #042c78);
+  background: linear-gradient(bottom, #0651d9 , #042c78);
   opacity: 0.8;
 }
 
@@ -355,13 +355,13 @@ input.input100 {
 /*---------------------------------------------*/
 .how-btn {
   padding: 0 20px;
-  background-color: #023fb0;
+  background-color: #cf0eae;
   border-radius: 25px;
 }
 
 .how-btn:hover {
   background-color: #fff;
-  color: #023fb0;
+  color: #cf0eae;
 }
 
 
