@@ -322,7 +322,7 @@ input.input100 {
 .bg1 {background-color: #17BFFF;}
 
 .bg-img1 {
-  background-image: url('../images/chunkzvid.mov');
+  background-image: url('../images/chunkzvid.mp4');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,7 +383,7 @@ input.input100 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 3%;
+  gap: 5%;
 }
 
 .criteria .bar {
