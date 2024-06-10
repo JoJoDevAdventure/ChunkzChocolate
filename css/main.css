@@ -14,7 +14,7 @@ Primary use:
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  src: url('../fonts/Fredoka-Regular.ttf');
 }
 
 @font-face {
@@ -29,12 +29,12 @@ Primary use:
 
 @font-face {
   font-family: PlayfairDisplay-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+  src: url('../fonts/Fredoka-Regular.ttf');
 }
 
 @font-face {
   font-family: PlayfairDisplay-Italic;
-  src: url('../fonts/Poppins/Poppins-Italic.ttf');
+  src: url('../fonts/Fredoka-Regular.ttf');
 }
 
 
@@ -47,8 +47,45 @@ Primary use:
 
 
 /*//////////////////////////////////////////////////////////////////
+
 [ Form ]*/
+.retailers {
+  background-color: #17BFFF;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.retailers h1{
+  color: black;
+  font-size: 64px;
+  font-family: Poppins-Regular;
+}
+
+.retailers p {
+  color: black;
+  opacity: 0.7;
+  font-size: 28px;
+  width: 700px;
+  text-align: center;
+  align-self: center;
+  margin-top: 10px;
+  font-family: Poppins-Regular;
+}
+
 .contact100-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -56,12 +93,12 @@ Primary use:
 [ Input ]*/
 
 .wrap-input100 {
-  width: 500px;
+  width: 600px;
   max-width: calc(100% - 10px);
   position: relative;
   background-color: transparent;
   height: 50px;
-  border: 2px solid rgba(255,255,255,0.5);
+  border: 2px solid rgba(0,0,0,0.9);
   border-radius: 25px;
 }
 
@@ -89,7 +126,7 @@ input.input100 {
   top: -2px;
   left: -2px;
   pointer-events: none;
-  border: 2px solid #4272d7;
+  border: 2px solid #FF00F9;
   border-radius: 25px;
   visibility: hidden;
   opacity: 0;
@@ -281,16 +318,90 @@ input.input100 {
 
 /*//////////////////////////////////////////////////////////////////
 [ Background ]*/
-.bg0 {background-color: #fff;}
-.bg1 {background-color: rgba(255,255,255,0.8);}
+.bg0 {background-color: #17BFFF;}
+.bg1 {background-color: #17BFFF;}
 
 .bg-img1 {
+  background-image: url('../images/chunkzvid.mov');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 120vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
+/*==================================================================
+   CRETERIA CRETERIA CRETERIA CRETERIA CRETERIA CRETERIA CRETERIA
+==================================================================*/
+.criteria {
+  display: flex;
+  flex-direction: column;
+  background-color: #17BFFF;
+  margin-top: -75px;
+  position: relative;
+  z-index: 1;
+  padding: 120px 10%;
+  text-align: center;
+  transition: background-color 1s ease; /* Smooth transition */
 
+}
+
+.criteria .comp {
+  display:flex;
+  flex-direction:row;
+  text-align: center;
+  align-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.criteria p {
+  color: black;
+  opacity: 0.7;
+  font-size: 28px;
+  max-width:900px;
+
+  font-family: Poppins-Regular;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.criteria .title {
+  color: black;
+  margin-top: 80px;
+  font-size: 64px;
+  font-family: Poppins-Regular;
+}
+
+.criteria .bars {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.criteria .bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.criteria .bar h1{
+  color: black;
+  font-family: Poppins-Regular;
+  font-size: 34px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -313,32 +424,12 @@ input.input100 {
 /*==================================================================
  HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
 ==================================================================*/
-.placeholder0::-webkit-input-placeholder { color: #fff;}
-.placeholder0:-moz-placeholder { color: #fff;}
-.placeholder0::-moz-placeholder { color: #fff;}
-.placeholder0:-ms-input-placeholder { color: #fff;}
+.placeholder0::-webkit-input-placeholder { color: #000;}
+.placeholder0:-moz-placeholder { color: #000;}
+.placeholder0::-moz-placeholder { color: #000;}
+.placeholder0:-ms-input-placeholder { color: #000;}
 
 /*---------------------------------------------*/
-.overlay1 {
-  position: relative;
-  z-index: 1;
-}
-.overlay1::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #10c4fe;
-  background: -webkit-linear-gradient(bottom, #0651d9, #042c78);
-  background: -o-linear-gradient(bottom, #0651d9, #042c78);
-  background: -moz-linear-gradient(bottom, #0651d9, #042c78);
-  background: linear-gradient(bottom, #0651d9 , #042c78);
-  opacity: 0.8;
-}
 
 .overlay1::after {
   content: "";
@@ -355,16 +446,31 @@ input.input100 {
 /*---------------------------------------------*/
 .how-btn {
   padding: 0 20px;
-  background-color: #cf0eae;
+  background-color: #FF00F9;
   border-radius: 25px;
+  width: 600px;
 }
 
 .how-btn:hover {
-  background-color: #fff;
+  background-color: #17BFFF;
   color: #cf0eae;
+  border: 2px solid #FF00F9;
 }
 
+footer { 
+  height: 100px;
+  display: flex;
+  background-color: #FF00F9;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
 
+footer h4 {
+  color: white;
+  font-size: 18px;
+}
 
 
 /*//////////////////////////////////////////////////////////////////

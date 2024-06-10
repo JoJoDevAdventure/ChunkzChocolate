@@ -15,7 +15,7 @@ body, html {
 	font-size: 15px;
 	color: #666666;
 
-	height: 100%;
+	height: auto;
 	background-color: #fff;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
