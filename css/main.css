@@ -587,9 +587,7 @@ footer h4 {
   .respon2 {
     display: none;
   }
-
 }
-
 
 /*//////////////////////////////////////////////////////////////////
 [ SM ]*/
@@ -611,8 +609,10 @@ footer h4 {
   .p-r-15-sm {padding-right: 15px;}
 
   .w-full-sm {width: 100%;}
-
   /*---------------------------------------------*/
+  .bg-img1 {
+    background-image: url('../images/mobile.mp4'); 
+  }
   
 }
 
