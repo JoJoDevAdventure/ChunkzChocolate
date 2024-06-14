@@ -22,7 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
 </head>
-
 <body>
 
 
@@ -59,7 +58,8 @@
 	<div class="retailers">
 		<h1>ARE YOU<br>A RETAILER?</h1>
 		<p>If you want to find out more about the chocolate or you are a retailer looking to stock then fill in the below</p>
-		<form name="submit-to-google-sheet" class="contact100-form validate-form">
+		<form name="submit-to-google-sheet" class="contact100-form validate-form" action="https://api.web3forms.com/submit" method="POST">
+			<input type="hidden" name="access_key" value="13494afb-3570-4f58-ac78-52fbc6556d48">
 			<div class="wrap-input100 validate-input where1" data-validate = "Email is required: ex@abc.xyz">
 				<input class="s1-txt1 placeholder0 input100" name="name" id="name" placeholder="Name" required>
 				<span class="focus-input100"></span>
@@ -81,7 +81,6 @@
 			</button>
 			<span style="color: white;" id="msg"></span>
 		</form>
-
 	</div>
 
 	<footer>
