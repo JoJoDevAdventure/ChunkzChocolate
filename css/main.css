@@ -404,6 +404,77 @@ input.input100 {
 }
 
 
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  background-color: #17BFFF;
+  margin-top: -75px;
+  position: relative;
+  z-index: 1;
+  padding: 60px 10%;
+  text-align: center;
+  transition: background-color 1s ease; /* Smooth transition */
+}
+
+.testimonials .comp {
+  display:flex;
+  flex-direction:row;
+  text-align: center;
+  align-content: space-between;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.testimonials p {
+  color: black;
+  opacity: 0.7;
+  font-size: 28px;
+  max-width:900px;
+
+  font-family: Poppins-Regular;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+.testimonials .title {
+  color: black;
+  margin-top: 20px;
+  font-size: 64px;
+  font-family: Poppins-Regular;
+}
+
+.testimonials .tests {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 30px;
+}
+
+.testimonials .test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.testimonials .test h1{
+  color: black;
+  font-family: Poppins-Regular;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.testimonials .test img {
+width: 100%;
+}
+
+
 /*//////////////////////////////////////////////////////////////////
 [ Border ]*/
 .bor1 {
@@ -683,6 +754,82 @@ footer h4 {
   }
   
   .criteria .bar h1{
+    color: black;
+    font-family: Poppins-Regular;
+    font-size: 34px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    background-color: #17BFFF;
+    margin-top: -75px;
+    position: relative;
+    z-index: 1;
+    padding: 80px 10%;
+    text-align: center;
+    transition: background-color 1s ease; /* Smooth transition */
+  
+  }
+  
+  .testimonials .comp {
+    display:flex;
+    flex-direction:row;
+    text-align: center;
+    align-content: space-between;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .testimonials img{
+    width: 25%;
+  }
+  
+  .testimonials p {
+    color: black;
+    opacity: 0.7;
+    font-size: 22px;
+    max-width:900px;
+  
+    font-family: Poppins-Regular;
+    margin: auto;
+    margin-top: 20px;
+  
+  }
+  
+  .testimonials .title {
+    color: black;
+    margin-top: 40px;
+    font-size: 44px;
+    font-family: Poppins-Regular;
+  }
+  
+  .testimonials .tests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .testimonials .test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .testimonials .test img{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  .testimonials .test h1{
     color: black;
     font-family: Poppins-Regular;
     font-size: 34px;
